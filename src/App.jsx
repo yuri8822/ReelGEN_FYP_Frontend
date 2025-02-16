@@ -1,17 +1,21 @@
-import { useState } from 'react'
-import './App.css'
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import "./App.css"
+import Header from "./Components/common/Header"
+import Home from "./Pages/Home"
 
 function App() {
-
   return (
-    <>        
-      <div className="card">
-        <h1>
-          ReelGen Football Highlights Generator
-        </h1>
-      </div>
+    <>
+    <Header />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+      </Routes>
+    </Router>
     </>
   )
 }
 
 export default App
+
