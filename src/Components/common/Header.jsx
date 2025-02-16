@@ -9,11 +9,11 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto px-2 py-4 flex items-center justify-between">
+      <div className="container px-4 py-4 flex items-center justify-between">
         <a href="/">
-          <img src={logo} alt="ReelGen Logo" className="h-20" />
+          <img src={logo} alt="ReelGen Logo" className="h-20 " />
         </a>
-        <nav className="hidden md:flex space-x-8 -ml-10">
+        <nav className="hidden md:flex space-x-8 ">
           <a href="#features" className="text-gray-600 text-lg hover:text-primary">
             Features
           </a>
