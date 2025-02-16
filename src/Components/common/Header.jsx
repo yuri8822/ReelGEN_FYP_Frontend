@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import logo from "../../Assets/logo2.png";
+import logo from "../../Assets/logo3.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,11 +9,11 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-2 py-4 flex items-center justify-between">
         <a href="/">
           <img src={logo} alt="ReelGen Logo" className="h-20" />
         </a>
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 -ml-10">
           <a href="#features" className="text-gray-600 text-lg hover:text-primary">
             Features
           </a>
