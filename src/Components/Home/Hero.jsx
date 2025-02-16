@@ -1,8 +1,8 @@
-import fb2 from "../../Assets/fb2.png"; // Adjust path as needed
+import fb2 from "../../Assets/fb2.png";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-r from-primary to-secondary text-white py-40">
+    <section className="relative bg-gradient-to-r from-primary to-secondary text-white py-40   ">
       {/* Background Gradient */}
 
       {/* Image Overlay */}
@@ -12,7 +12,7 @@ export default function Hero() {
       ></div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 text-center h-[100vh] relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Transform Football Videos into Viral Reels
         </h1>

@@ -1,14 +1,18 @@
 "use client"
 
-import { useState } from "react"
+import { useState } from "react";
+import logo from "../../Assets/logo2.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  //etna san serif font to be used later 
 
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold text-primary">ReelGEN</div>
+        <a href="/">
+          <img src={logo} alt="ReelGen Logo" className="h-20" />
+        </a>
         <nav className="hidden md:flex space-x-8">
           <a href="#features" className="text-gray-600 text-lg hover:text-primary">
             Features
@@ -46,4 +50,3 @@ export default function Header() {
     </header>
   )
 }
-
